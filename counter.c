@@ -1,5 +1,5 @@
 /*******************************************************************************
-* 
+* Trivial Modification 
 * Purpose: Assignment #3 solution.
 *
 * Author: Kevin Browne
