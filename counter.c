@@ -9,6 +9,7 @@
 #include <string.h>
 #include <ctype.h>
 
+<<<<<<< HEAD
 #define COUNT_SIZE 26
 #define BUFFER_SIZE 1024
 
@@ -21,6 +22,18 @@ int main()
 
   int max(int count[]);
   int min(int count[]);
+=======
+#define BUFFER_SIZE 1024
+
+int max(int count[]);
+int min(int count[]);
+
+int main()
+{
+  char buffer[BUFFER_SIZE], input, curchar;
+  int i = 0, count[26];
+  int spaces = 0;
+>>>>>>> origin/feature
 
   // request and read in the string from the user
   printf("Enter text for analysis: ");
@@ -42,7 +55,10 @@ int main()
     curchar = toupper(buffer[i]);
     if (curchar >= 65 && curchar <= 90) count[curchar - 65]++;
     if (curchar == ' ') spaces++;
+<<<<<<< HEAD
     else other++;
+=======
+>>>>>>> origin/feature
   }
 
   // Create the letter analysis table
@@ -54,6 +70,8 @@ int main()
                                count[i],
                                (((float) count[i]) / strlen(buffer)) * 100);
   }
+  printf("\nTotal spaces: %d\n", spaces);
+
 
   printf("\nTotal spaces: %d\n", spaces);
 
